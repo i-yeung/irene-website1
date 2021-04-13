@@ -1,0 +1,86 @@
+@media (min-width: 992px) {
+  .world-map-section {
+    padding: 0 80px;
+  }
+}
+.world-map-section .world-map-main .world-map-container {
+  margin-top: 105px;
+}
+@media (min-width: 992px) {
+  .world-map-section .world-map-main .world-map-container {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 105px;
+  }
+}
+.world-map-section .world-map-main .world-map-container .world-map-svg {
+  width: 100%;
+  margin: 0 15px;
+}
+.world-map-section .world-map-main .world-map-container .marker-wrap .world-map-marker {
+  fill: #072540;
+  fill-opacity: 1;
+  cursor: pointer;
+  r: 8;
+}
+@media (min-width: 992px) {
+  .world-map-section .world-map-main .world-map-container .marker-wrap .world-map-marker {
+    r: 10;
+  }
+}
+.world-map-section .world-map-main .world-map-container .marker-wrap .world-map-marker.selected {
+  display: none;
+}
+.world-map-section .world-map-main .world-map-container .world-map-graph-vector path {
+  fill: #D4DADE;
+}
+.world-map-section .world-map-main .world-map-container .world-map-graph-vector path.selected {
+  fill: #CCE0E8;
+}
+.world-map-section .world-map-main .world-map-container .marker-wrap .selected-outer-circle {
+  fill: #90CDD0;
+  fill-opacity: 0.7;
+}
+.world-map-section .world-map-main .continent-discription-wrap {
+  background-color: #CCE0E8;
+  text-align: center;
+  margin: 10px;
+  padding: 30px;
+}
+@media (min-width: 992px) {
+  .world-map-section .world-map-main .continent-discription-wrap .continent-discription-col {
+    display: inline-block;
+    width: calc(97% / 3);
+  }
+}
+.world-map-section .world-map-main .continent-discription-wrap * {
+  color: #ffffff;
+}
+.world-map-section .world-map-main .continent-discription-wrap .continent-name {
+  font-family: Tahoma;
+  font-size: 35px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+@media (min-width: 992px) {
+  .world-map-section .world-map-main .continent-discription-wrap .continent-name {
+    font-size: 40px;
+  }
+}
+.world-map-section .world-map-main .continent-discription-wrap .stats-number {
+  font-family: Tahoma;
+  font-size: 35px;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .world-map-section .world-map-main .continent-discription-wrap .stats-number {
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+}

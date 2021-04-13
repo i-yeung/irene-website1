@@ -1,0 +1,49 @@
+body{
+  background: #fdfdff;
+  /* background-image: url("../images/whitesilk.jpeg"); */
+  /* #ede3e0 another background colour */
+  color:#76939b;
+  padding: 25;
+  margin: 15;
+font-family: 'Poiret One', cursive;
+}\
+
+.home{
+  background: #FCFCFC
+}
+
+img{
+  width: 95%;
+  height: auto;
+  left: 75px;
+  float: left;
+  margin: 2%
+}
+
+a{
+  color:#76939b;
+  text-decoration:none;
+  font-size:20px;
+}
+
+.page-wrap{
+    min-height:100%;
+    margin-bottom:-100px;
+  }
+
+.page-wrap:after{
+    content:"";
+    display: block;
+  }
+
+  footer,
+  .page-wrap:after{
+    height:100px;
+  }
+
+  footer{
+    background:#CCE0E8;
+    text-align:center;
+    padding:0px;
+    color: white;
+  }

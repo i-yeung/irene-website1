@@ -1,0 +1,176 @@
+html, body{
+  height:100%;
+}
+
+body{
+  background: #FCFCFC
+  /* #ede3e0 another background colour */
+  color:#76939b;
+font-family: 'Raleway', sans-serif;
+}
+
+a{
+  color:#072540;
+  text-decoration:none;
+  font-size:20px;
+}
+
+/* a:visited{
+  color: #072540;
+} */
+
+header,
+nav {
+    padding: 2%
+}
+
+nav a{
+  padding:5%;
+  text-align:right;
+}
+
+nav{
+  background:#CCE0E8;
+}
+
+h1{
+    font-size:35px;
+    padding: 0% 10% 0% 18%;
+    width:40%;
+    float:left;
+}
+
+h2{
+  font-size:25px;
+}
+
+h3{
+  font-size:26px;
+  padding: 5% 5% 2% 1%;
+  width:45%;
+  float:right;
+  text-align:center;
+  color:#95AEB5;
+}
+
+img{
+  width: 30%;
+  height: 35%;
+  /* border: 3px solid ; */
+  left: 75px;
+  float: left;
+  margin:2%;
+    /* position: relative; */
+}
+
+p{
+  font-size:30px;
+  padding: 5% 10% 0% 5%;
+  width:40%;
+  float:left;
+  text-align:center;
+}
+
+footer{
+  clear:both
+}
+
+.home{
+  background: #FCFCFC
+/* background: url(../images/whitesilk.jpeg) no-repeat 50% / cover; */
+}
+
+.page-wrap{
+  min-height:100%;
+  margin-bottom:-50px;
+}
+
+.page-wrap:after{
+  content:"";
+  display: block;
+}
+
+
+.profile{
+  display:flex;
+  align-content:flex-start;
+  justify-content:space-around;
+}
+
+.flexslider{
+  width:45%;
+  padding:5%;
+  position:relative;
+  float:right;
+}
+
+.textbox{
+  width:125%;
+  margin:-10% 0% -5% 7%;
+}
+
+footer,
+.page-wrap:after{
+  height:120px;
+  width:auto;
+}
+
+footer{
+  background:#CCE0E8;
+  text-align:center;
+  justify-content:space-around;
+  color: white;
+  padding:5px;
+}
+
+footer a{
+  padding:15px;
+  border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10% 10% 10% 10%;
+    padding:10px;
+    margin:10px;
+}
+
+.landing{
+    width:95%;
+    height: auto;
+    border: none;
+    background:white;
+}
+
+.mail{
+  background: url(../images/coffee.jpg) no-repeat 150% /cover;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  margin:5%;
+  margin-left:55%;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  border-radius: 4px; /* Rounded borders */
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+input[type=submit] {
+  background-color: #CCE0E8;
+  color:#072540;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+.bio{
+  position:absolute;
+  height:90%;
+  width:86%;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}

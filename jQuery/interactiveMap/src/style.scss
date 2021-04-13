@@ -1,0 +1,83 @@
+@mixin temp-font($size, $weight, $family: HelveticaNeue) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+
+$temp-blue: #003bb3;
+$temp-white: #ffffff;
+$temp-dark-grey: #4a4a4a;
+$screen-lg-min: 992px;
+
+.world-map-section {
+  @media (min-width: $screen-lg-min) {
+    padding: 0 80px;
+  }
+  .world-map-main .world-map-container {
+    margin-top: 105px;
+    @media (min-width: $screen-lg-min) {
+      max-width: 1000px;
+      margin: auto;
+      margin-top: 105px;
+    }
+    .world-map-svg {
+      width: 100%;
+      margin: 0 15px;
+    }
+    .marker-wrap .world-map-marker {
+      fill: $temp-blue;
+      fill-opacity: 1;
+      cursor: pointer;
+      r: 8;
+      @media (min-width: $screen-lg-min) {
+        r: 10;
+      }
+      &.selected {
+        display: none;
+      }
+    }
+    .world-map-graph-vector path {
+      fill: #d6d7d8;
+      &.selected {
+        fill: #707cf4;
+        // fill: url(#img1); Just uncomment this to use the image as wallpaper
+      }
+    }
+    .marker-wrap .selected-outer-circle {
+      fill: $temp-blue;
+      fill-opacity: 0.7;
+    }
+  }
+  .world-map-main .continent-discription-wrap {
+    background-color: $temp-blue;
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+    @media (min-width: $screen-lg-min) {
+      .continent-discription-col {
+        display: inline-block;
+        width: calc(97% / 3);
+      }
+    }
+    * {
+      color: $temp-white;
+    }
+    .continent-name {
+      @include temp-font(35px, 300);
+      @media (min-width: $screen-lg-min) {
+        font-size: 40px;
+      }
+    }
+    .stats-number {
+      @include temp-font(35px, 100, HelveticaNeue-Thin);
+      padding: 0;
+      @media (min-width: $screen-lg-min) {
+        font-size: 40px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
